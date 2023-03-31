@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+			padding: 20px;
+		}
+		
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		.profile {
+			flex-basis: calc(100% / 3 - 20px);
+			margin: 10px;
+			background-color: #fff;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+			overflow: hidden;
+		}
+		
+		.profile img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		
+		.profile-content {
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.profile-content h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		
+		.profile-content p {
+			font-size: 16px;
+			margin-bottom: 20px;
+			color: #333;
+		}
+		
+		@media only screen and (max-width: 768px) {
+			.profile {
+				flex-basis: calc(50% - 20px);
+			}
+		}
+		
+		@media only screen and (max-width: 480px) {
+			.profile {
+				flex-basis: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="profile">
+			<img src="https://via.placeholder.com/400x400" alt="sumit shukla ">
+			<div class="profile-content">
+				<h2>Sumit shukla</h2>
+				<p>CEO at feeding families</p>
+			</div>
+		</div>
+		<div class="profile">
+			<img src="https://via.placeholder.com/400x400" alt="sambhav jain">
+			<div class="profile-content">
+				<h2>Sambhav Jain</h2>
+				<p>Graphic Designer</p>
+			</div>
+		</div>
+		<div class="profile">
+			<img src="https://via.placeholder.com/400x400" alt="khushal vashisth">
+			<div class="profile-content">
+				<h2>khushal vashisth</h2>
+				<p>CMO at feeding families</p>
+			</div>
+            <div class="profile">
+                <img src="https://via.placeholder.com/400x400" alt="anish">
+                <div class="profile-content">
+                    <h2>Anish</h2>
+                    <p>socialist</p>
+                </div>
+		</div>
+	</div>
+</body>
+</html>
